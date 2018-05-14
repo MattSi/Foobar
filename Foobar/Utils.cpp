@@ -16,6 +16,7 @@ int* GenRandNumbers(int* A, int len, int range_max, int range_min) {
 }
 
 int MaxSubArray1(int* A, int len /* Index starts from 1 */) {
+	/* 时间复杂度为 O(n^3)的算法 */
 	int maxSum;
 	assert(A != NULL );
 
@@ -33,6 +34,7 @@ int MaxSubArray1(int* A, int len /* Index starts from 1 */) {
 }
 
 int MaxSubArray2(int* A, int len /* Index starts from 1 */) {
+	/* 时间复杂度为 O(n^2)的算法 */
 	int maxSum, *S;
 	S = (int*)malloc(sizeof(int*) * (len+1));
 
@@ -62,6 +64,7 @@ int MaxSubArray3(int *A, int left, int right) {
 }
 
 int MaxSubArray4(int *A, int n /* Index starts from 1 */) {
+	/* 时间复杂度为 O(n)级别的算法 */
 	assert(A != NULL);
 	int maxsofar = 0, maxrightend = 0;
 
