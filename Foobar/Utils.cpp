@@ -76,7 +76,9 @@ int MaxSubArray4(int *A, int n /* Index starts from 1 */) {
 	return maxsofar;
 }
 
-
+int FirstKthDatainArray(int *A, int k) {
+	return 0;
+}
 
 
 
